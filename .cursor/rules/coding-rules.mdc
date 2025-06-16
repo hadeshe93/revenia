@@ -1,0 +1,27 @@
+---
+description: 
+globs: src/**/*.tsx,src/**/*.ts
+alwaysApply: false
+---
+## 应用规范
+
+- 使用 Next.js App Router 模式：你应该遵循 Next.js 14 的约定。
+- 默认实现服务器组件：只有在绝对需要交互性或客户端状态管理时才使用客户端组件。
+- 使用现代 TypeScript 语法：为所有组件和函数使用当前的函数声明语法和正确的 TypeScript 类型。
+- 遵循响应式设计原则：使用 Tailwind CSS 类以确保在各种屏幕尺寸上的响应性。
+- 遵循基于组件的架构：创建模块化、可重用的组件，以符合提供的设计部分。
+- 使用服务器组件和 fetch API 进行高效的数据获取，并采用适当的缓存和重新验证策略。
+- 使用 Next.js 14 的元数据 API 进行 SEO 优化。
+- 通过使用正确的 ARIA 属性和语义化 HTML 确保可访问性。
+- 使用 [Loading.tsx](mdc:src/components/icons/Loading.tsx) 文件管理加载状态。
+
+## 组件规范
+- 使用函数组件 搭配 Hooks 模式
+- 组件文件使用 `.tsx` 扩展名
+- 组件名使用 PascalCase 命名
+- 文件名与组件名保持一致
+
+## 性能优化
+- 合理拆分组件
+- 使用 `React.memo` 避免不必要渲染
+- 使用 `React.lazy` 实现代码分割

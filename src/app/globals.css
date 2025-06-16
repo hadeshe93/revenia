@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  min-height: 200vh;
+  font-family: "PingFang SC", sans-serif;
+  @apply bg-base-300;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+@keyframes highlightBg {
+  0% { background-color: transparent; }
+  25% { background-color: rgba(255, 255, 255, 0.3); }
+  50% { background-color: transparent; }
+  75% { background-color: rgba(255, 255, 255, 0.3); }
+  100% { background-color: transparent; }
+}
+
+.bg-highlight-animation {
+  animation: highlightBg 500ms ease-in-out;
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    border-color: #525252;
+  }
+  50% {
+    border-color: #aaaaaa;
+  }
+}
+
+
+.breathing-border {
+  animation: breathe 1s ease-in-out infinite;
+}
+
+.wheel-canvas-container {
+  & > canvas {
+    width: 100% !important;
+  }
+}
+
+@keyframes handmove {
+  0%{
+    bottom: 0;
+    right: 0;
+  }
+  30% {
+    bottom: 40%;
+    right: 40%;
+    transform: skewX(0deg) scale(1);
+  }
+  40% {
+    transform: skewX(10deg) scale(0.9);
+  }
+  50% {
+    bottom: 40%;
+    right: 40%;
+    transform: skewX(0deg) scale(1);
+  }
+  70% {
+    bottom: 0;
+    right: 0;
+  }
+  100% {}
+}
+.hand-move {
+  animation: handmove 5s ease-in-out infinite;
+}
+
+@keyframes wheelspin {
+  0%, 30% {
+    transform: rotate(0deg);
+  }
+  58.57%, 100% {
+    transform: rotate(360deg);
+  }
+}
+.wheel-spin {
+  transform-origin: center;
+  animation: wheelspin 5s ease-in-out infinite;
+}
+
+.hex-color-picker .react-colorful {
+  width: 250px;
+}
+
+.fullscreen {
+  width: 100vw;
+  min-height: 100vh;
+  @apply fixed inset-0 z-50 bg-base-100 overflow-y-auto;
+}
+
+
+@layer components {
+  .section-container {
+    @apply max-w-7xl mt-6 mx-auto px-2 md:px-4 py-4 md:py-10 text-base-content text-lg;
+  }
+
+  [data-theme="light"] .btn:not(.btn-primary) {
+    @apply bg-neutral-50 border-neutral-300 shadow text-base-content hover:bg-neutral-200;
+  }
+  [data-theme="light"] .input {
+    @apply bg-neutral-50 border-neutral-300 shadow text-base-content;
+  }
+
+  /* blog-article */
+  .blog-article {
+    width: 100%;
+    display: block;
+    @apply text-base-content;
+  }
+  .blog-article  h1 {
+    @apply text-2xl md:text-3xl font-bold mb-4;
+  }
+  .blog-article  h2 {
+    @apply text-xl md:text-2xl font-bold mt-4 mb-2;
+  }
+  .blog-article  h3 {
+    @apply text-lg md:text-xl font-bold mt-4 mb-2;
+  }
+  .blog-article p {
+    @apply my-3;
+  }
+  .blog-article p, .blog-article li {
+    font-family: Spectral, serif;
+    @apply text-lg md:text-xl;
+  }
+  .blog-article ul {
+    @apply list-inside list-disc;
+  }
+  .blog-article li {
+    @apply py-1;
+  }
+  .blog-article blockquote {
+    @apply pl-6 border-l-4 border-neutral-400;
+  }
+  .blog-article blockquote * {
+    @apply text-neutral-content;
+  }
+  .blog-article-media {
+    @apply block mx-auto rounded overflow-hidden;
+  }
+  .blog-article img,
+  .blog-article video {
+    @apply blog-article-media max-w-[250px] md:max-w-[320px] object-cover;
+  }
+  .blog-article a {
+    @apply underline decoration-neutral-content decoration-1 underline-offset-2;
+  }
+  .blog-article pre {
+    @apply max-w-full overflow-x-auto p-4 rounded bg-neutral-900;
+  }
+  .blog-article code {
+    @apply block;
+  }
+  .blog-article ol {
+    @apply list-decimal list-inside;
+  }
+  .blog-article hr {
+    @apply border-none h-[1px] bg-neutral-content;
+  }
+
+  /* changelog-detail */
+  .changelog-detail a {
+    @apply underline;
+  }
+}
