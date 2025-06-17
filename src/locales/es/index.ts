@@ -2,7 +2,7 @@ import privacy from './privacy';
 import terms from './terms';
 import { DOMAIN } from '@/constants/biz';
 
-const TITLE = 'Revenia: Un juego de terror y supervivencia mexicano | Centro de la comunidad';
+const TITLE = 'Revenia: Un juego de terror y supervivencia mexicano';
 const DESCRIPTION =
   'Explora el oscuro mundo de Revenia, un juego de terror y supervivencia en tercera persona inspirado en el folclore mexicano. Este es un sitio web impulsado por la comunidad para los fans de Revenia.';
 

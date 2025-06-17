@@ -2,7 +2,7 @@ import privacy from './privacy';
 import terms from './terms';
 import { DOMAIN } from '@/constants/biz';
 
-const TITLE = 'Revenia: A Mexican Horror Survival Game | Community Hub';
+const TITLE = 'Revenia: A Mexican Horror Survival Game';
 const DESCRIPTION =
   'Explore the dark world of Revenia, a third-person horror survival game inspired by Mexican folklore. This is a community-driven website for fans of Revenia.';
 
