@@ -1,20 +1,6 @@
-import Introduction from '@/components/sections/Introduction';
 import privacy from './privacy';
 import terms from './terms';
 import { DOMAIN } from '@/constants/biz';
-
-const BLOG = {
-  label: 'Blog',
-  href: '/blog',
-};
-const CHANGELOG = {
-  label: 'Changelog',
-  href: '/changelog',
-};
-const FEEDBACK = {
-  label: 'Feedback',
-  href: 'https://docs.google.com/forms/d/e/1FAIpQLSfWPzpy4Zui4sBzZnOgQDUjHlV3yrVKd1p6XbPWTJCskPDffA/viewform?usp=header',
-};
 
 const TITLE = 'Revenia: A Mexican Horror Survival Game | Community Hub';
 const DESCRIPTION =
@@ -35,9 +21,6 @@ export default {
       description: DESCRIPTION,
     },
     nav: {
-      blog: BLOG,
-      changelog: CHANGELOG,
-      feedback: FEEDBACK,
     },
     footer: {
       language: 'Language',
@@ -68,7 +51,7 @@ export default {
       downloadButton: 'Download Demo(Beta)',
       downloadLink: 'https://kulkatto.itch.io/revenia-cyp',
       trailerButton: 'Watch Trailer',
-      trailerLink: 'https://www.youtube.com/watch?v=LRed9QAmuTM',
+      trailerLink: 'https://www.youtube.com/watch?v=KP2opBOkT9I&t=8s',
     },
     examples: {
       titlePrefix: 'Experience the',
@@ -165,80 +148,6 @@ export default {
       buttonText: 'Download Demo Now',
       buttonLink: '/download',
     },
-    howToPlay: {
-      title: 'How to Use Our Duplicate Remover Tool',
-      steps: [
-        {
-          title: 'Step 1: Enter Your Text',
-          content: [
-            'Simply paste or type the text you wish to clean into the designated input box. Our tool is ready to process your content instantly.',
-          ],
-          imgUrl: '',
-        },
-        {
-          title: 'Step 2: Select Options & Submit',
-          content: [
-            "Choose from our powerful options like 'Ignore uppercase letters', 'Preserve leading spaces', 'Keep blank lines', or 'Sort results' to customize your cleaning process. Then, click the submit button to initiate the duplicate removal.",
-          ],
-          imgUrl: '',
-        },
-        {
-          title: 'Step 3: Review & Copy Cleaned Content',
-          content: [
-            "Your cleaned and organized text will appear in the result box. Review the output, and then easily copy it to your clipboard for immediate use. It's that simple!",
-          ],
-          imgUrl: '',
-        },
-      ],
-    },
-    faq: {
-      title: 'Frequently Asked Questions about Duplicate Removal',
-      questions: [
-        {
-          q: 'What is duplicate line removal?',
-          a: [
-            'Duplicate line removal is the process of identifying and eliminating identical lines of text from a given input. This helps in cleaning data, simplifying content, and improving readability by removing redundant information.',
-          ],
-        },
-        {
-          q: 'Is my data safe and private when using this tool?',
-          a: [
-            'Absolutely. We prioritize your privacy and security. All text processing is done locally within your browser. Your data is never sent to our servers, ensuring complete confidentiality.',
-          ],
-        },
-        {
-          q: 'Can I remove duplicates while ignoring case differences?',
-          a: [
-            "Yes! Our tool offers an 'Ignore uppercase letters' option. When selected, the tool treats 'TEXT' and 'text' as the same, and all output will be converted to lowercase for consistency.",
-          ],
-        },
-        {
-          q: "How does 'Preserve leading spaces' work?",
-          a: [
-            "This option ensures that any spaces at the beginning of a line are maintained in the cleaned output. It's particularly useful for preserving formatting in code snippets, lists, or structured data.",
-          ],
-        },
-        {
-          q: 'Will blank lines be removed automatically?',
-          a: [
-            "By default, blank lines might be treated as duplicates if they are identical. However, you can use our 'Keep blank lines' option to explicitly preserve them, which is great for maintaining paragraph formatting and readability.",
-          ],
-        },
-        {
-          q: 'Can I sort the results alphabetically?',
-          a: [
-            "Yes, you can! Simply select the 'Sort results' option, and your cleaned text will be automatically arranged in alphabetical order, making it easier to review and organize.",
-          ],
-        },
-        {
-          q: 'Is this tool compatible with mobile devices?',
-          a: [
-            'Yes, our website is designed with a responsive UI/UX, ensuring full compatibility and an optimal experience on both PC and mobile devices.',
-          ],
-        },
-      ],
-    },
-    
   },
   privacy,
   terms,
