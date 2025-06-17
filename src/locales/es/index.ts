@@ -140,27 +140,6 @@ export default {
         },
       ],
     },
-    socialMedia: {
-      titlePrefix: 'Connect on',
-      title: 'Social Media',
-      description: 'Stay up-to-date with the latest news, development updates, behind-the-scenes glimpses, and community events.',
-      contents: [
-        {
-          title: 'TikTok',
-          description: `Follow us for short, engaging videos, development diaries, and quick updates on Revenia's progress.`,
-          imgUrl: '/assets/icons/tiktok.svg',
-          linkText: 'Follow Us',
-          linkUrl: 'https://www.tiktok.com/@reveniaproject',
-        },
-        {
-          title: 'Instagram',
-          description: `Explore concept art, environmental designs, and artistic inspirations behind Revenia.`,
-          imgUrl: '/assets/icons/instagram.svg',
-          linkText: 'Follow Us',
-          linkUrl: 'https://www.instagram.com/kulkattostudio/',
-        },
-      ]
-    },
     cta: {
       titlePrefix: 'Ready to Face the',
       title: 'Darkness',
@@ -169,36 +148,7 @@ export default {
       buttonText: 'Download Demo Now',
       buttonLink: '/download',
     },
-    faq: {
-      title: 'FAQ',
-      questions: [
-        {
-          q: 'Who is developing Revenia?',
-          a: [
-            'Revenia is being developed independently by a single creator, Kulkatto. This project is a testament to passion and dedication, with every aspect of the game, from programming to art and music, meticulously crafted by one individual.',
-          ],
-        },
-        {
-          q: 'What kind of game is Revenia?',
-          a: [
-            'Revenia is primarily a third-person narrative experience that falls into the horror survival genre. It features elements of exploration, combat, crafting, and resource management, all set within a deeply atmospheric world inspired by Mexican folklore.',
-          ],
-        },
-        {
-          q: 'What is the story background of Revenia?',
-          a: [
-            `In Revenia, you play as a woman returning to her ancestral village after many years. This village, once familiar, is now shrouded in mist, superstition, and an unsettling abandonment. The land itself seems possessed by a latent darkness, with ancient legends, forbidden symbols, and time-worn ruins hinting at an ancient entity that has awakened and demands recognition. The narrative is a descent into a reality where every shadow holds a secret and every sound could be your last, exploring the protagonist's connection to this cursed land and its dark past.`,
-          ],
-        },
-        {
-          q: 'What is the biggest highlight of this game?',
-          a: [
-            `Revenia does not seek to impress with technical or visual spectacle. It draws its strength from details, atmospheres, and the tension that arises from a carefully crafted setting. It is deeply inspired by folklore, myths, legends, and the open wounds of Mexican collective memory.`,
-          ],
-        },
-      ],
-    },
   },
-  // privacy,
-  // terms,
+  privacy,
+  terms,
 };

@@ -6,7 +6,8 @@ import CTA from '@/components/CTA';
 import Hero from '@/components/sections/Hero';
 import Examples from '@/components/sections/Examples';
 import List from '@/components/sections/List';
-
+import DualList from '@/components/sections/DualList';
+import FAQ from '@/components/sections/FAQ';
 type PageProps = Readonly<{
   params: { locale: Lang };
 }>;
@@ -22,7 +23,9 @@ async function Home({ params: { locale } }: PageProps) {
       <Introduction i18nText={homeI18nText.Introduction} />
       <List i18nText={homeI18nText.systemRequirements} className="md:grid-cols-2 text-left" />
       <List i18nText={homeI18nText.features} />
+      <DualList i18nText={homeI18nText.socialMedia} />
       <CTA i18nText={homeI18nText.cta} />
+      <FAQ i18nText={homeI18nText.faq} />
     </div>
   );
 }
