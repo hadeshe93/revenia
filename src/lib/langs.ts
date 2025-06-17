@@ -15,17 +15,17 @@ export interface Language {
 }
 
 export const languages: Language[] = [
-  // {
-  //   code: "es-ES",
-  //   lang: "es",
-  //   language: "Español",
-  //   zhLanguage: "西班牙语",
-  // },
   {
     code: "en-US",
     lang: "en",
     language: "English",
     zhLanguage: "英语",
+  },
+  {
+    code: "es-ES",
+    lang: "es",
+    language: "Español",
+    zhLanguage: "西班牙语",
   },
   // {
   //   code: "pl-PL",
