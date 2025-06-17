@@ -1,5 +1,5 @@
 import CTAButton from './CTAButton';
-import LucideRocket from '~icons/lucide/rocket';
+import LucideDownload from '~icons/lucide/download';
 
 interface CTAProps {
   i18nText: {
@@ -25,7 +25,7 @@ export default function CTA({ i18nText }: CTAProps) {
           </h2>
           <p className="text-base-content/80 mb-4">{i18nText.description}</p>
           <CTAButton primary href={i18nText.buttonLink} className='mt-10 max-w-screen-md mx-auto'>
-            <LucideRocket className="w-6 h-6" />
+            <LucideDownload className="w-6 h-6" />
             {i18nText.buttonText}
           </CTAButton>
         </div>

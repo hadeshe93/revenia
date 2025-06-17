@@ -133,27 +133,27 @@ export default {
       contents: [
         {
           label: '',
-          content: '• Exploration in a section of the village',
+          content: 'Exploration in a section of the village',
         },
         {
           label: '',
-          content: '• Introduction to survival and combat systems',
+          content: 'Introduction to survival and combat systems',
         },
         {
           label: '',
-          content: '• Minor enemies and one major threat',
+          content: 'Minor enemies and one major threat',
         },
         {
           label: '',
-          content: '• Crafting, healing, and natural resources',
+          content: 'Crafting, healing, and natural resources',
         },
         {
           label: '',
-          content: '• Carefully crafted atmosphere',
+          content: 'Carefully crafted atmosphere',
         },
         {
           label: '',
-          content: '• Duration: 15-20 minutes',
+          content: 'Duration: 15-20 minutes',
         },
       ],
     },

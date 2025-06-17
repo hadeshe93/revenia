@@ -20,7 +20,7 @@ export default function List({ i18nText, className }: ListProps) {
         {i18nText.titlePrefix}&nbsp;
         <span className="text-primary">{i18nText.title}</span>
       </h2>
-      <div className={cn("mt-6 border border-primary/20 bg-slate-900 text-base-content rounded-xl p-4 grid grid-cols-1 gap-4 text-center", className)}>
+      <div className={cn("mt-6 md:mt-10 border border-primary/20 bg-slate-900 text-base-content rounded-xl p-4 grid grid-cols-1 gap-4 text-center", className)}>
         {i18nText.contents.map((content, index) => (
             <p key={index}>
               <Show when={!!content.label}>
