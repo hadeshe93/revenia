@@ -33,7 +33,7 @@ export default function DualList({ i18nText, className }: DualListProps) {
         )}
       >
         {i18nText.contents.map((content, index) => (
-          <div key={index} className="flex gap-4 border border-primary/20 bg-slate-900 text-base-content rounded-xl p-4">
+          <div key={index} className="flex gap-4 border border-primary/20 bg-slate-900 text-base-content rounded-xl p-4 hover:shadow-xl hover:shadow-primary/20 transition duration-300">
             <span className="flex shrink-0 rounded-full w-16 h-16 p-2 bg-primary/20">
               <img src={content.imgUrl} alt={content.title} className="w-12 h-12 object-cover" />
             </span>

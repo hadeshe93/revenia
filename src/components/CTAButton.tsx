@@ -12,7 +12,7 @@ export default function CTAButton({ href, children, className, primary }: CTABut
   return (
     <a
       className={cn(
-        'w-full rounded-full h-12 leading-12 border-2 flex items-center justify-center gap-2 font-extrabold border-primary transition-colors duration-300',
+        'w-full rounded-full h-12 leading-12 border-2 flex items-center justify-center gap-2 font-extrabold border-primary transition duration-300 hover:scale-105',
         primary
           ? 'bg-primary text-base-content hover:bg-primary/90'
           : 'bg-base-content text-primary hover:bg-base-content/90',
