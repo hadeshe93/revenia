@@ -37,14 +37,14 @@ export default function Hero({ i18nText }: HeroProps) {
       {/* 主要内容区域 */}
       <div className="relative z-10 text-center px-4 md:px-8 max-w-4xl mx-auto">
         {/* 主标题 */}
-        <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold mb-4 tracking-wider animate-pulse">
+        <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold mb-4 tracking-wider animate-pulse font-creepster">
           <span className="bg-gradient-to-b from-red-500 via-red-600 to-red-800 bg-clip-text text-transparent">
             {i18nText.title}
           </span>
         </h1>
 
         {/* 副标题 */}
-        <p className="text-xl md:text-2xl lg:text-3xl font-light mb-4 md:mb-8 text-gray-300 tracking-wide">
+        <p className="text-xl md:text-2xl lg:text-3xl font-light mb-4 md:mb-8 text-gray-300 tracking-wide font-creepster">
           {i18nText.subtitle}
         </p>
 

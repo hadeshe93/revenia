@@ -159,6 +159,20 @@ export default {
           linkText: 'Síguenos',
           linkUrl: 'https://www.instagram.com/kulkattostudio/',
         },
+        {
+          title: 'Youtube',
+          description: `Mira los últimos tráilers, diarios de desarrollo y miradas detrás de escena de Revenia.`,
+          imgUrl: '/assets/icons/youtube.svg',
+          linkText: 'Mira a nosotros',
+          linkUrl: 'https://www.youtube.com/@kulkattostudio',
+        },
+        {
+          title: 'Discord',
+          description: `Únete a nuestra comunidad para discutir el juego, comparte tus ideas y recibe las últimas actualizaciones.`,
+          imgUrl: '/assets/icons/discord.svg',
+          linkText: 'Únete a nosotros',
+          linkUrl: 'https://discord.gg/kulkattostudio',
+        },
       ]
     },
     cta: {
@@ -167,7 +181,7 @@ export default {
       titleSuffix: '?',
       description: 'Descarga la demo gratuita y experimenta el primer vistazo a este juego mexicano de terror y supervivencia.',
       buttonText: 'Descargar Demo Ahora',
-      buttonLink: '/download',
+      buttonLink: 'https://kulkatto.itch.io/revenia-cyp',
     },
     faq: {
       title: 'Preguntas Frecuentes',

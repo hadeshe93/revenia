@@ -43,7 +43,7 @@ export default function NavBar({ locale, i18nText }: NavBarProps) {
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" locale={locale} className="cursor-pointer flex items-center space-x-2">
               <img src="/icon.png" alt="logo" className="w-10 h-10" />
-              <span className="text-xl font-bold">{i18nText.brand.name}</span>
+              <span className="text-xl font-bold font-creepster">{i18nText.brand.name}</span>
             </Link>
           </div>
           {/* 移动端场景 */}

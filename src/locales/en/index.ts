@@ -159,6 +159,20 @@ export default {
           linkText: 'Follow Us',
           linkUrl: 'https://www.instagram.com/kulkattostudio/',
         },
+        {
+          title: 'Youtube',
+          description: `Watch the latest trailers, development diaries, and behind-the-scenes looks at Revenia.`,
+          imgUrl: '/assets/icons/youtube.svg',
+          linkText: 'Watch Us',
+          linkUrl: 'https://www.youtube.com/@kulkattostudio',
+        },
+        {
+          title: 'Discord',
+          description: `Join our community to discuss the game, share your thoughts, and get the latest updates.`,
+          imgUrl: '/assets/icons/discord.svg',
+          linkText: 'Join Us',
+          linkUrl: 'https://discord.gg/kulkattostudio',
+        },
       ]
     },
     cta: {
@@ -167,7 +181,7 @@ export default {
       titleSuffix: '?',
       description: 'Download the free demo and experience the first glimpse of this unique Mexican horror survival game.',
       buttonText: 'Download Demo Now',
-      buttonLink: '/download',
+      buttonLink: 'https://kulkatto.itch.io/revenia-cyp',
     },
     faq: {
       title: 'FAQ',
