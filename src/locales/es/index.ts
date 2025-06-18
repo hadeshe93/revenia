@@ -1,5 +1,6 @@
 import privacy from './privacy';
 import terms from './terms';
+import about from './about';
 import { DOMAIN } from '@/constants/biz';
 
 const TITLE = 'Revenia: Un juego de terror y supervivencia mexicano';
@@ -21,6 +22,10 @@ export default {
       description: DESCRIPTION,
     },
     nav: {
+      about: {
+        label: 'Acerca de',
+        href: '/about',
+      },
     },
     footer: {
       language: 'Idioma',
@@ -37,6 +42,7 @@ export default {
         text: 'Todos los derechos reservados',
         buildWith: 'Desarrollado con Next.js',
       },
+      disclaimer: 'Disclaimer: Este sitio web es contribuido por entusiastas del juego. Revenia.net no está afiliado con el juego oficial de Revenia o Kulkatto.',
       resources: {
         title: 'Recursos',
         links: [],
@@ -193,9 +199,13 @@ export default {
       titlePrefix: '¿Listo para enfrentar la',
       title: 'Oscuridad',
       titleSuffix: '?',
-      description: 'Descarga la demo gratuita y experimenta el primer vistazo a este juego mexicano de terror y supervivencia.',
+      description: [
+        'Descarga la demo gratuita y experimenta el primer vistazo a este juego mexicano de terror y supervivencia.',
+      ],
       buttonText: 'Descargar Demo (Beta)',
       buttonLink: 'https://kulkatto.itch.io/revenia-cyp',
+      buttonIcon: '/assets/icons/download.svg',
+      buttonIconAlt: 'Descargar Demo (Beta)',
     },
     faq: {
       title: 'Preguntas Frecuentes',
@@ -227,6 +237,7 @@ export default {
       ],
     },
   },
+  about,
   // privacy,
   // terms,
 };

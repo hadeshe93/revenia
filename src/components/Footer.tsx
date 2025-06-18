@@ -44,6 +44,7 @@ export interface FooterProps {
       domain: string;
       buildWith: string;
     };
+    disclaimer: string;
     privacyPolicy: string;
     termsOfService: string;
     aboutUs: string;
@@ -53,7 +54,18 @@ export interface FooterProps {
 
 export default function Footer({ locale, i18nText }: FooterProps) {
   const pathname = usePathname();
-  const { brand, resources, community, friends, copyright, privacyPolicy, termsOfService, aboutUs, language } = i18nText;
+  const {
+    brand,
+    resources,
+    community,
+    friends,
+    copyright,
+    privacyPolicy,
+    termsOfService,
+    aboutUs,
+    language,
+    disclaimer,
+  } = i18nText;
   const bottomInnerLinks: any[] = [
     // {
     //   label: privacyPolicy,
@@ -93,12 +105,7 @@ export default function Footer({ locale, i18nText }: FooterProps) {
               {languages.map((language, index) => {
                 return (
                   <li key={index}>
-                    <Link
-                      href={pathname}
-                      locale={locale}
-                      isExternal={true}
-                      className="text-sm hover:text-base-content"
-                    >
+                    <Link href={pathname} locale={locale} isExternal={true} className="text-sm hover:text-base-content">
                       {language.language}
                     </Link>
                   </li>
@@ -167,7 +174,8 @@ export default function Footer({ locale, i18nText }: FooterProps) {
         </div>
 
         {/* 底部版权信息 */}
-        <div className="mt-12 border-t border-neutral pt-8">
+        <div className="mt-12 border-t border-neutral pt-8 space-y-4">
+          <div className="text-sm">{disclaimer}</div>
           <div className="flex flex-col md:flex-row justify-between">
             <p className="text-sm">
               © {copyright.year} • {copyright.domain} {copyright.text}{' '}

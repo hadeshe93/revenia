@@ -34,14 +34,14 @@ export default function DualList({ i18nText, className }: DualListProps) {
       >
         {i18nText.contents.map((content, index) => (
           <div key={index} className="flex gap-4 border border-primary/20 bg-slate-900 text-base-content rounded-xl p-4 hover:shadow-xl hover:shadow-primary/20 transition duration-300">
-            <span className="flex shrink-0 rounded-full w-16 h-16 p-2 bg-primary/20">
-              <img src={content.imgUrl} alt={content.title} className="w-12 h-12 object-cover" />
+            <span className="flex shrink-0 items-center justify-center rounded-full w-16 h-16 bg-primary/20">
+              <img src={content.imgUrl} alt={content.title} className="w-10 h-10 object-cover" />
             </span>
             <div className="space-y-2">
               <h3 className="text-lg font-bold">{content.title}</h3>
               <p className="text-sm text-neutral-content">{content.description}</p>
               <Show when={!!content.linkText}>
-                <a href={content.linkUrl} className="flex items-center gap-2 text-sm text-primary hover:text-primary/80" target="_blank" rel="noopener noreferrer">
+                <a href={content.linkUrl} className="flex items-center gap-2 text-sm text-red-400 hover:text-red-400/80" target="_blank" rel="noopener noreferrer">
                   {content.linkText}
                   <LucideExternalLink className="w-4 h-4" />
                 </a>

@@ -23,7 +23,7 @@ export default function FAQ({ i18nText }: FAQProps) {
     <section className="section-container text-base-content">
       {/* 标题部分 */}
       <div className="text-center mb-10">
-        <h2 className="text-xl md:text-2xl font-bold mb-4">{i18nText.title}</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">{i18nText.title}</h2>
         <Show when={Boolean(i18nText.subtitle)}>
           <p className="">{i18nText.subtitle}</p>
         </Show>

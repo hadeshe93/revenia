@@ -1,5 +1,6 @@
 import privacy from './privacy';
 import terms from './terms';
+import about from './about';
 import { DOMAIN } from '@/constants/biz';
 
 const TITLE = 'Revenia: A Mexican Horror Survival Game';
@@ -21,6 +22,10 @@ export default {
       description: DESCRIPTION,
     },
     nav: {
+      about: {
+        label: 'About',
+        href: '/about',
+      },
     },
     footer: {
       language: 'Language',
@@ -37,6 +42,7 @@ export default {
         text: 'All rights reserved',
         buildWith: 'Built with Next.js',
       },
+      disclaimer: 'Disclaimer: This website is contributed by game enthusiasts. Revenia.net is not affiliated with official Revenia game or Kulkatto.',
       resources: {
         title: 'Resources',
         links: [],
@@ -163,28 +169,28 @@ export default {
           title: 'TikTok',
           description: `Follow us for short, engaging videos, development diaries, and quick updates on Revenia's progress.`,
           imgUrl: '/assets/icons/tiktok.svg',
-          linkText: 'Follow Us',
+          linkText: 'Follow',
           linkUrl: 'https://www.tiktok.com/@reveniaproject',
         },
         {
           title: 'Instagram',
           description: `Explore concept art, environmental designs, and artistic inspirations behind Revenia.`,
           imgUrl: '/assets/icons/instagram.svg',
-          linkText: 'Follow Us',
+          linkText: 'Follow',
           linkUrl: 'https://www.instagram.com/kulkattostudio/',
         },
         {
           title: 'Youtube',
           description: `Watch the latest trailers, development diaries, and behind-the-scenes looks at Revenia.`,
           imgUrl: '/assets/icons/youtube.svg',
-          linkText: 'Watch Us',
+          linkText: 'Watch',
           linkUrl: 'https://www.youtube.com/@kulkattostudio',
         },
         {
           title: 'Discord',
           description: `Join our community to discuss the game, share your thoughts, and get the latest updates.`,
           imgUrl: '/assets/icons/discord.svg',
-          linkText: 'Join Us',
+          linkText: 'Join',
           linkUrl: 'https://discord.gg/kulkattostudio',
         },
       ]
@@ -193,9 +199,13 @@ export default {
       titlePrefix: 'Ready to Face the',
       title: 'Darkness',
       titleSuffix: '?',
-      description: 'Download the free demo and experience the first glimpse of this unique Mexican horror survival game.',
+      description: [
+        'Download the free demo and experience the first glimpse of this unique Mexican horror survival game.',
+      ],
       buttonText: 'Download Demo(Beta)',
       buttonLink: 'https://kulkatto.itch.io/revenia-cyp',
+      buttonIcon: '/assets/icons/download.svg',
+      buttonIconAlt: 'Download Demo(Beta)',
     },
     faq: {
       title: 'FAQ',
@@ -227,6 +237,7 @@ export default {
       ],
     },
   },
+  about,
   // privacy,
   // terms,
 };
