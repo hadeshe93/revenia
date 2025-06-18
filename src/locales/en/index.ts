@@ -52,6 +52,20 @@ export default {
       downloadLink: 'https://kulkatto.itch.io/revenia-cyp',
       trailerButton: 'Watch Trailer',
       trailerLink: 'https://www.youtube.com/watch?v=KP2opBOkT9I&t=8s',
+      screenshots: [
+        {
+          imgUrl: '/imgs/screenshots/revenia-1.jpg',
+          alt: 'The village is shrouded in mist',
+        },
+        {
+          imgUrl: '/imgs/screenshots/revenia-2.jpg',
+          alt: 'Prepare to enter the village',
+        },
+        {
+          imgUrl: '/imgs/screenshots/revenia-3.jpg',
+          alt: 'Enter the village',
+        },
+      ],
     },
     examples: {
       titlePrefix: 'Experience the',
@@ -180,7 +194,7 @@ export default {
       title: 'Darkness',
       titleSuffix: '?',
       description: 'Download the free demo and experience the first glimpse of this unique Mexican horror survival game.',
-      buttonText: 'Download Demo Now',
+      buttonText: 'Download Demo(Beta)',
       buttonLink: 'https://kulkatto.itch.io/revenia-cyp',
     },
     faq: {

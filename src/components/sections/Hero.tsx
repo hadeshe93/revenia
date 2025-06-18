@@ -14,6 +14,10 @@ export interface HeroProps {
     trailerButton: string;
     downloadLink: string;
     trailerLink: string;
+    screenshots: {
+      imgUrl: string;
+      alt: string;
+    }[];
   };
 }
 
@@ -31,7 +35,7 @@ export default function Hero({ i18nText }: HeroProps) {
   return (
     <section className="relative box-border min-h-screen bg-black text-white overflow-hidden pt-16 md:pt-24">
       {/* 背景装饰 */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900/50 to-black"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900/30 to-black"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.1)_0%,transparent_50%)]"></div>
 
       {/* 主要内容区域 */}
@@ -67,7 +71,7 @@ export default function Hero({ i18nText }: HeroProps) {
         </p>
 
         {/* 操作按钮组 */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center hidden">
           {/* 下载 Demo 按钮 */}
           <a
             className="group relative overflow-hidden bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-red-500/25 min-w-[200px]"
@@ -95,6 +99,13 @@ export default function Hero({ i18nText }: HeroProps) {
             </div>
           </a> */}
         </div>
+      </div>
+
+      {/* 图片墙壁 */}
+      <div className="flex sm:flex-row gap-4 justify-center items-center">
+        {i18nText.screenshots.map((screenshot, index) => (
+          <img key={index} src={screenshot.imgUrl} alt={screenshot.alt} className="w-1/2 h-1/2" />
+        ))}
       </div>
 
       {/* 底部渐变 */}

@@ -24,7 +24,7 @@ export default function Introduction({ i18nText }: IntroductionProps) {
           <p key={index}>{content}</p>
         ))}
         {/* CTA Button */}
-        <div className="max-w-lg mx-auto">
+        <div className="max-w-md mx-auto">
           <CTAButton href={i18nText.ctaLink} className="">
             <LucideBookOpenText className="w-6 h-6" />
             {i18nText.ctaText}

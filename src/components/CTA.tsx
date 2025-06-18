@@ -24,7 +24,7 @@ export default function CTA({ i18nText }: CTAProps) {
             {i18nText.titleSuffix}
           </h2>
           <p className="text-base-content/80 mb-4">{i18nText.description}</p>
-          <CTAButton primary href={i18nText.buttonLink} className='mt-10 max-w-screen-md mx-auto'>
+          <CTAButton primary href={i18nText.buttonLink} className='mt-10 max-w-md mx-auto'>
             <LucideDownload className="w-6 h-6" />
             {i18nText.buttonText}
           </CTAButton>

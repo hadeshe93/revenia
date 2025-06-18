@@ -52,6 +52,20 @@ export default {
       downloadLink: 'https://kulkatto.itch.io/revenia-cyp',
       trailerButton: 'Ver Tráiler',
       trailerLink: 'https://www.youtube.com/watch?v=KP2opBOkT9I&t=8s',
+      screenshots: [
+        {
+          imgUrl: '/imgs/screenshots/revenia-1.jpg',
+          alt: 'El pueblo está envuelto en niebla',
+        },
+        {
+          imgUrl: '/imgs/screenshots/revenia-2.jpg',
+          alt: 'Prepara para entrar al pueblo',
+        },
+        {
+          imgUrl: '/imgs/screenshots/revenia-3.jpg',
+          alt: 'Entra al pueblo',
+        },
+      ],
     },
     examples: {
       titlePrefix: 'Experimenta el',
@@ -180,7 +194,7 @@ export default {
       title: 'Oscuridad',
       titleSuffix: '?',
       description: 'Descarga la demo gratuita y experimenta el primer vistazo a este juego mexicano de terror y supervivencia.',
-      buttonText: 'Descargar Demo Ahora',
+      buttonText: 'Descargar Demo (Beta)',
       buttonLink: 'https://kulkatto.itch.io/revenia-cyp',
     },
     faq: {
