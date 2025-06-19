@@ -59,6 +59,8 @@ export default {
     ],
     buttonText: '',
     buttonLink: '',
+    buttonIcon: '',
+    buttonIconAlt: '',
   },
   socialMedia: {
     titlePrefix: 'Comunidad y',
