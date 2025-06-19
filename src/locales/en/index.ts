@@ -1,6 +1,7 @@
 import privacy from './privacy';
 import terms from './terms';
 import about from './about';
+import media from './media';
 import { DOMAIN } from '@/constants/biz';
 
 const TITLE = 'Revenia: A Mexican Horror Survival Game';
@@ -22,6 +23,10 @@ export default {
       description: DESCRIPTION,
     },
     nav: {
+      media: {
+        label: 'Media',
+        href: '/media',
+      },
       about: {
         label: 'About',
         href: '/about',
@@ -238,6 +243,7 @@ export default {
     },
   },
   about,
+  media,
   // privacy,
   // terms,
 };

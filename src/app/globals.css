@@ -28,6 +28,20 @@ html, body {
   @apply bg-[length:30px_30px] bg-center bg-no-repeat;
 }
 
+.video-tiktok-bg {
+  @apply bg-[url('/assets/icons/tiktok.svg')] bg-[length:40px_40px] bg-center bg-no-repeat bg-gray-900;
+}
+
+.section-divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #dc2626, transparent);
+  margin: 3rem 0;
+}
+
+.card-hover {
+  @apply hover:shadow-xl hover:shadow-primary/20 transition duration-300;
+}
+
 @keyframes highlightBg {
   0% { background-color: transparent; }
   25% { background-color: rgba(255, 255, 255, 0.3); }

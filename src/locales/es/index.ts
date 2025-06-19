@@ -22,6 +22,10 @@ export default {
       description: DESCRIPTION,
     },
     nav: {
+      media: {
+        label: 'Media',
+        href: '/media',
+      },
       about: {
         label: 'Acerca de',
         href: '/about',

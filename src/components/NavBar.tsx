@@ -53,6 +53,11 @@ export default function NavBar({ locale, i18nText }: NavBarProps) {
             content={
               <div className="bg-base-100 w-[90%] h-full p-4 flex flex-col gap-2">
                 <div className={cn('text-sm flex flex-col gap-4')}>
+                  {/* Media */}
+                  <Link className="" href={i18nText.media.href} locale={locale} title={i18nText.media.label}>
+                    {i18nText.media.label}
+                  </Link>
+
                   {/* 关于 */}
                   <Link className="" href={i18nText.about.href} locale={locale} title={i18nText.about.label}>
                     {i18nText.about.label}
@@ -114,6 +119,11 @@ export default function NavBar({ locale, i18nText }: NavBarProps) {
           />
           {/* PC 端场景 */}
           <div className="items-center space-x-4 text-sm hidden md:flex">
+            {/* Media */}
+            <Link className="" href={i18nText.media.href} locale={locale} title={i18nText.media.label}>
+              {i18nText.media.label}
+            </Link>
+
             {/* 关于 */}
             <Link className="" href={i18nText.about.href} locale={locale} title={i18nText.about.label}>
               {i18nText.about.label}
