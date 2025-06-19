@@ -21,6 +21,10 @@ html, body {
   scroll-behavior: smooth;
 }
 
+.loading-bg {
+  @apply bg-[url('/assets/icons/loading-white.svg')] bg-[length:30px_30px] bg-center bg-no-repeat;
+}
+
 @keyframes highlightBg {
   0% { background-color: transparent; }
   25% { background-color: rgba(255, 255, 255, 0.3); }

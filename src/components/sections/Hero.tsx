@@ -54,7 +54,7 @@ export default function Hero({ i18nText }: HeroProps) {
 
         {/* 视频 */}
         <iframe
-          className="max-w-full mx-auto mb-4 md:mb-8"
+          className="max-w-full mx-auto mb-4 md:mb-8 loading-bg"
           width="560"
           height="315"
           src="https://www.youtube.com/embed/KP2opBOkT9I?si=zwKnnc8RcPRjUBCs"
