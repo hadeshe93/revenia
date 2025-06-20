@@ -11,7 +11,7 @@ export default {
     information: {
       title: 'Information We Collect',
       description:
-        `${CAPITALIZED_DOMAIN} is designed to be a simple, privacy-focused website that helps users to remove duplicate items from a text. We collect minimal data to ensure the site functions properly:`,
+        `${CAPITALIZED_DOMAIN} is designed to be a simple, privacy-focused website that provides a friendly community for gaming enthusiasts to share and exchange experiences, insights, and feelings related to Revenia games. We collect minimal data to ensure the site functions properly:`,
       items: [
         'Basic usage data to improve site performance',
         'Anonymous analytics to understand how visitors interact with our content',

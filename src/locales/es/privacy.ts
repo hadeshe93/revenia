@@ -2,79 +2,79 @@ import { DOMAIN, CAPITALIZED_DOMAIN } from '@/constants/biz';
 
 export default {
   metadata: {
-    title: `Privacy Policy | ${CAPITALIZED_DOMAIN}`,
-    description: `Privacy Policy for ${CAPITALIZED_DOMAIN} - Learn how we handle your information when you use our service.`,
+    title: `Política de Privacidad | ${CAPITALIZED_DOMAIN}`,
+    description: `Política de Privacidad para ${CAPITALIZED_DOMAIN} - Conoce cómo manejamos tu información cuando usas nuestro servicio.`,
   },
-  backToGame: 'Back to Home',
-  title: 'Privacy Policy',
+  backToGame: 'Volver al Inicio',
+  title: 'Política de Privacidad',
   sections: {
     information: {
-      title: 'Information We Collect',
+      title: 'Información que Recopilamos',
       description:
-        `${CAPITALIZED_DOMAIN} is designed to be a simple, privacy-focused website that helps users to remove duplicate items from a text. We collect minimal data to ensure the site functions properly:`,
+        `${CAPITALIZED_DOMAIN} está diseñado para ser un sitio web sencillo y enfocado en la privacidad, que proporciona una comunidad amigable para que los entusiastas de los videojuegos compartan y expresen experiencias, ideas y sentimientos relacionados con los juegos de Revenia. Recopilamos datos mínimos para asegurar el correcto funcionamiento del sitio:`,
       items: [
-        'Basic usage data to improve site performance',
-        'Anonymous analytics to understand how visitors interact with our content',
+        'Datos básicos de uso para mejorar el rendimiento del sitio',
+        'Analíticas anónimas para entender cómo los visitantes interactúan con nuestro contenido',
       ],
     },
     usage: {
-      title: 'How We Use Your Information',
-      description: 'The data we collect is used exclusively to:',
+      title: 'Cómo Usamos tu Información',
+      description: 'Los datos que recopilamos se utilizan exclusivamente para:',
       items: [
-        'Improve website performance and user experience',
-        'Analyze which replays are most popular or useful to visitors',
-        'Understand how users navigate through our content',
+        'Mejorar el rendimiento del sitio web y la experiencia del usuario',
+        'Analizar qué repeticiones son más populares o útiles para los visitantes',
+        'Comprender cómo los usuarios navegan por nuestro contenido',
       ],
     },
     protection: {
-      title: 'How We Protect Your Information',
+      title: 'Cómo Protegemos tu Información',
       description:
-        'We have implemented reasonable security measures to help protect against the loss, misuse, or alteration of the information under our control. We prioritize your privacy and only collect the minimum information necessary to provide our service.',
+        'Hemos implementado medidas de seguridad razonables para ayudar a proteger contra la pérdida, el mal uso o la alteración de la información bajo nuestro control. Priorizamos tu privacidad y solo recopilamos la información mínima necesaria para brindar nuestro servicio.',
     },
     storage: {
-      title: 'Data Storage',
+      title: 'Almacenamiento de Datos',
       description:
-        'We use cookies and similar technologies to enhance your browsing experience and collect anonymous usage data. We do not store personal information that can identify individual users unless explicitly provided by you (such as when contacting us via email).',
+        'Utilizamos cookies y tecnologías similares para mejorar tu experiencia de navegación y recopilar datos de uso anónimos. No almacenamos información personal que pueda identificar a usuarios individuales a menos que tú la proporciones explícitamente (por ejemplo, al contactarnos por correo electrónico).',
     },
     analytics: {
       title: 'Google Analytics',
       description:
-        'We use Google Analytics to monitor and analyze the use of our service. Google Analytics is a web analytics service offered by Google that tracks and reports website traffic. Google uses the data collected to track and monitor the use of our service. This data is shared with other Google services. Google may use the collected data to contextualize and personalize the ads of its own advertising network.',
+        'Utilizamos Google Analytics para monitorear y analizar el uso de nuestro servicio. Google Analytics es un servicio de análisis web ofrecido por Google que rastrea e informa el tráfico del sitio web. Google utiliza los datos recopilados para rastrear y monitorear el uso de nuestro servicio. Estos datos se comparten con otros servicios de Google. Google puede utilizar los datos recopilados para contextualizar y personalizar los anuncios de su propia red publicitaria.',
       optOut:
-        'You can opt-out of having made your activity on the service available to Google Analytics by installing the Google Analytics opt-out browser add-on. The add-on prevents the Google Analytics JavaScript (ga.js, analytics.js, and dc.js) from sharing information with Google Analytics about visits activity.',
+        'Puedes optar por no permitir que tu actividad en el servicio esté disponible para Google Analytics instalando el complemento de inhabilitación para navegadores de Google Analytics. El complemento impide que el JavaScript de Google Analytics (ga.js, analytics.js y dc.js) comparta información con Google Analytics sobre la actividad de las visitas.',
       moreInfo:
-        'For more information on the privacy practices of Google, please visit the Google Privacy & Terms web page:',
+        'Para más información sobre las prácticas de privacidad de Google, visita la página web de Privacidad y Términos de Google:',
     },
     thirdParty: {
-      title: 'Third-Party Links',
-      description: `Our website contains links to ${DOMAIN} and other external websites. Please note that:`,
+      title: 'Enlaces de Terceros',
+      description: `Nuestro sitio web contiene enlaces a ${DOMAIN} y otros sitios externos. Ten en cuenta que:`,
       items: [
-        'We are not responsible for the privacy practices or content of these external sites',
-        `When you click on links to ${DOMAIN}, you may be subject to the privacy policy of ${DOMAIN}`,
-        'We encourage you to review the privacy policies of any external sites you visit through our links',
+        'No somos responsables de las prácticas de privacidad ni del contenido de estos sitios externos',
+        `Cuando haces clic en enlaces a ${DOMAIN}, puedes estar sujeto a la política de privacidad de ${DOMAIN}`,
+        'Te recomendamos revisar las políticas de privacidad de cualquier sitio externo que visites a través de nuestros enlaces',
       ],
     },
     deletion: {
-      title: 'Data Deletion',
-      description: 'You can limit data collection at any time by:',
+      title: 'Eliminación de Datos',
+      description: 'Puedes limitar la recopilación de datos en cualquier momento mediante:',
       items: [
-        'Using private browsing or incognito mode',
-        'Clearing your browser cookies and local storage',
-        'Installing browser extensions that block tracking',
+        'Usar la navegación privada o modo incógnito',
+        'Borrar las cookies y el almacenamiento local de tu navegador',
+        'Instalar extensiones de navegador que bloqueen el rastreo',
       ],
     },
     updates: {
-      title: 'Updates to Privacy Policy',
+      title: 'Actualizaciones de la Política de Privacidad',
       description:
-        'We may update this privacy policy as needed to reflect changes in our practices or for other operational, legal, or regulatory reasons. Any changes will be reflected on this page with an updated revision date.',
+        'Podemos actualizar esta política de privacidad según sea necesario para reflejar cambios en nuestras prácticas o por otras razones operativas, legales o regulatorias. Cualquier cambio se reflejará en esta página con una fecha de revisión actualizada.',
     },
     contact: {
-      title: 'Contact Us',
-      description: 'If you have any questions about our privacy policy or how we handle your data, please contact us at:',
-      email: `contact@${DOMAIN}`,
+      title: 'Contáctanos',
+      description: 'Si tienes alguna pregunta sobre nuestra política de privacidad o cómo manejamos tus datos, contáctanos en:',
+      email: `contacto@${DOMAIN}`,
     },
   },
   footer: {
-    lastUpdated: 'Last updated: June 2025',
+    lastUpdated: 'Última actualización: junio de 2025',
   },
 };

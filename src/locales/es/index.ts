@@ -1,6 +1,7 @@
 import privacy from './privacy';
 import terms from './terms';
 import about from './about';
+import media from './media';
 import { DOMAIN } from '@/constants/biz';
 
 const TITLE = 'Revenia: Un juego de terror y supervivencia mexicano';
@@ -23,7 +24,7 @@ export default {
     },
     nav: {
       media: {
-        label: 'Media',
+        label: 'Medios',
         href: '/media',
       },
       about: {
@@ -242,6 +243,7 @@ export default {
     },
   },
   about,
-  // privacy,
-  // terms,
+  media,
+  privacy,
+  terms,
 };

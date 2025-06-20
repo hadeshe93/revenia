@@ -244,6 +244,6 @@ export default {
   },
   about,
   media,
-  // privacy,
-  // terms,
+  privacy,
+  terms,
 };

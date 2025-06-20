@@ -45,7 +45,7 @@ export default {
     disclaimer: {
       title: 'Disclaimer of Warranties',
       description:
-        `${CAPITALIZED_DOMAIN} is provided on an "as is" and "as available" basis. We make no warranties, express or implied, regarding the website\'s accuracy, reliability, or availability. Your use of the service is at your own risk.`,
+        `${CAPITALIZED_DOMAIN} is provided on an "as is" and "as available" basis. We make no warranties, express or implied, regarding the website\'s accuracy, reliability, or availability. Your use of the service is at your own risk. This website is contributed by game enthusiasts. Revenia.net is not affiliated with official Revenia game or Kulkatto.`,
     },
     limitation: {
       title: 'Limitation of Liability',

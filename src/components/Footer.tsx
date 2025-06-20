@@ -67,14 +67,14 @@ export default function Footer({ locale, i18nText }: FooterProps) {
     disclaimer,
   } = i18nText;
   const bottomInnerLinks: any[] = [
-    // {
-    //   label: privacyPolicy,
-    //   href: '/privacy',
-    // },
-    // {
-    //   label: termsOfService,
-    //   href: '/terms',
-    // },
+    {
+      label: privacyPolicy,
+      href: '/privacy',
+    },
+    {
+      label: termsOfService,
+      href: '/terms',
+    },
     // {
     //   label: aboutUs,
     //   href: '/about',

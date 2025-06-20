@@ -2,70 +2,70 @@ import { DOMAIN, CAPITALIZED_DOMAIN } from '@/constants/biz';
 
 export default {
   metadata: {
-    title: `Terms of Service | ${CAPITALIZED_DOMAIN}`,
-    description: `Terms of Service for ${CAPITALIZED_DOMAIN} - Learn about the rules and terms that govern your use of our website.`,
+    title: `Términos de Servicio | ${CAPITALIZED_DOMAIN}`,
+    description: `Términos de Servicio para ${CAPITALIZED_DOMAIN} - Conoce las reglas y condiciones que rigen el uso de nuestro sitio web.`,
   },
-  backToGame: 'Back to Home',
-  title: 'Terms of Service',
+  backToGame: 'Volver al Inicio',
+  title: 'Términos de Servicio',
   descriptions: [
-    'Last updated: June 2025',
-    'Please read these terms and conditions carefully before using Our Service.',
+    'Última actualización: junio de 2025',
+    'Por favor, lee estos términos y condiciones cuidadosamente antes de usar nuestro servicio.',
   ],
   sections: {
     acceptance: {
-      title: 'Acceptance of Terms',
+      title: 'Aceptación de los Términos',
       description:
-        `By accessing and using ${DOMAIN}, you agree to be bound by these Terms of Service and our Privacy Policy. If you do not agree with any part of these terms, please do not use our website.`,
+        `Al acceder y utilizar ${DOMAIN}, aceptas estar sujeto a estos Términos de Servicio y a nuestra Política de Privacidad. Si no estás de acuerdo con alguna parte de estos términos, por favor no utilices nuestro sitio web.`,
     },
     description: {
-      title: 'Description of Service',
+      title: 'Descripción del Servicio',
       description:
-        `${CAPITALIZED_DOMAIN} provides a free online tool that helps users to remove duplicate items from a text. The service is provided "as is" and we reserve the right to modify, suspend, or terminate it at any time without prior notice.`,
+        `${CAPITALIZED_DOMAIN} proporciona una herramienta en línea gratuita que ayuda a los usuarios a eliminar elementos duplicados de un texto. El servicio se proporciona "tal cual" y nos reservamos el derecho de modificar, suspender o terminarlo en cualquier momento sin previo aviso.`,
     },
     usage: {
-      title: 'Usage Guidelines',
-      description: `When using ${DOMAIN}, you agree to:`,
+      title: 'Directrices de Uso',
+      description: `Al utilizar ${DOMAIN}, aceptas:`,
       items: [
-        'Use the website for lawful purposes only',
-        'Not attempt to hack, disrupt, or damage the website in any way',
-        'Not use the website to harass, abuse, or threaten others',
-        'Not impersonate any person or entity',
-        'Not use the website for any commercial purpose without our express consent',
-        'Not use the website for any gambling-related activities, whether commercial or non-commercial',
-        'Not use the website for any pornographic, violent, politically sensitive, or otherwise inappropriate content',
-        'Not use the website to promote or engage in any illegal activities',
-        'Not use the website in a way that violates any applicable laws or regulations',
+        'Utilizar el sitio web solo para fines legales',
+        'No intentar hackear, interrumpir o dañar el sitio web de ninguna manera',
+        'No utilizar el sitio web para acosar, abusar o amenazar a otros',
+        'No suplantar a ninguna persona o entidad',
+        'No utilizar el sitio web para ningún propósito comercial sin nuestro consentimiento expreso',
+        'No utilizar el sitio web para actividades relacionadas con apuestas, ya sean comerciales o no comerciales',
+        'No utilizar el sitio web para contenido pornográfico, violento, políticamente sensible o de otra índole inapropiada',
+        'No utilizar el sitio web para promover o participar en actividades ilegales',
+        'No utilizar el sitio web de manera que viole cualquier ley o regulación aplicable',
       ],
     },
     intellectualProperty: {
-      title: 'Intellectual Property',
+      title: 'Propiedad Intelectual',
       description:
-        `All content on ${DOMAIN}, including text, graphics, logos, and software, is the property of ${CAPITALIZED_DOMAIN} and protected by international copyright laws. You may not reproduce, modify, distribute, or create derivative works from any part of the website without our written permission.`,
+        `Todo el contenido en ${DOMAIN}, incluyendo textos, gráficos, logotipos y software, es propiedad de ${CAPITALIZED_DOMAIN} y está protegido por leyes internacionales de derechos de autor. No puedes reproducir, modificar, distribuir o crear obras derivadas de ninguna parte del sitio web sin nuestro permiso por escrito.`,
     },
     disclaimer: {
-      title: 'Disclaimer of Warranties',
+      title: 'Exención de Garantías',
       description:
-        `${CAPITALIZED_DOMAIN} is provided on an "as is" and "as available" basis. We make no warranties, express or implied, regarding the website\'s accuracy, reliability, or availability. Your use of the service is at your own risk.`,
+        `${CAPITALIZED_DOMAIN} se proporciona "tal cual" y "según disponibilidad". No ofrecemos garantías, expresas o implícitas, sobre la exactitud, fiabilidad o disponibilidad del sitio web. El uso del servicio es bajo tu propio riesgo. Este sitio web es contribuido por entusiastas del juego. Revenia.net no está afiliado con el juego oficial de Revenia o Kulkatto.`,
     },
     limitation: {
-      title: 'Limitation of Liability',
+      title: 'Limitación de Responsabilidad',
       description:
-        `In no event shall ${DOMAIN} be liable for any direct, indirect, incidental, special, or consequential damages arising out of or in connection with your use of ${DOMAIN}, even if advised of the possibility of such damages.`,
+        `En ningún caso ${DOMAIN} será responsable de ningún daño directo, indirecto, incidental, especial o consecuente que surja de o en conexión con tu uso de ${DOMAIN}, incluso si se ha advertido de la posibilidad de tales daños.`,
     },
     indemnification: {
-      title: 'Indemnification',
+      title: 'Indemnización',
       description:
-        `You agree to indemnify and hold ${DOMAIN} harmless from any claims, losses, liabilities, damages, costs, and expenses (including reasonable attorneys\' fees) arising out of your use of the website or violation of these Terms of Service.`,
+        `Aceptas indemnizar y eximir de responsabilidad a ${DOMAIN} de cualquier reclamación, pérdida, responsabilidad, daño, costo y gasto (incluidos los honorarios razonables de abogados) que surjan de tu uso del sitio web o de la violación de estos Términos de Servicio.`,
     },
     changes: {
-      title: 'Changes to Terms of Service',
+      title: 'Cambios en los Términos de Servicio',
       description:
-        `We reserve the right to update or modify these Terms of Service at any time without prior notice. Your continued use of ${DOMAIN} after any changes constitutes your acceptance of the new terms.`,
+        `Nos reservamos el derecho de actualizar o modificar estos Términos de Servicio en cualquier momento sin previo aviso. Tu uso continuado de ${DOMAIN} después de cualquier cambio constituye tu aceptación de los nuevos términos.`,
     },
     contact: {
-      title: 'Contact Us',
-      description: 'If you have any questions about these Terms of Service, please contact us at:',
-      email: `contact@${DOMAIN}`,
+      title: 'Contáctanos',
+      description: 'Si tienes alguna pregunta sobre estos Términos de Servicio, contáctanos en:',
+      email: `contacto@${DOMAIN}`,
     },
   },
   footer: {
