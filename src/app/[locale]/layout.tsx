@@ -13,6 +13,7 @@ import Canonical from '@/components/Canonical';
 import HrefLangs from '@/components/HrefLangs';
 import { DEFAULT_THEME } from '@/constants/theme';
 import { DOMAIN } from '@/constants/biz';
+import GoogleAdsense from '@/components/GoogleAdsense';
 
 import '../globals.css';
 
@@ -76,6 +77,7 @@ async function LocaleLayout({
         {
           isCustom ? (<meta name="robots" content="noindex" />) : null
         }
+        <meta name="google-adsense-account" content="ca-pub-6950664459785666" />
         <Canonical locale={locale} />
         <HrefLangs />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -83,6 +85,7 @@ async function LocaleLayout({
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
         <GoogleTag />
+        <GoogleAdsense />
       </head>
       <body>
         <NextTopLoader shadow={false} showSpinner={false} color="#0073E9" />
