@@ -196,7 +196,7 @@ export default {
           description: `Join our community to discuss the game, share your thoughts, and get the latest updates.`,
           imgUrl: '/assets/icons/discord.svg',
           linkText: 'Join',
-          linkUrl: 'https://discord.gg/kulkattostudio',
+          linkUrl: 'https://discord.gg/wmsK3tazt4',
         },
       ]
     },

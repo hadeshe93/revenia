@@ -93,7 +93,7 @@ export default {
         description: `Únete a nuestra comunidad para discutir el juego, comparte tus ideas y recibe las últimas actualizaciones.`,
         imgUrl: '/assets/icons/discord.svg',
         linkText: 'Únete a nosotros',
-        linkUrl: 'https://discord.gg/kulkattostudio',
+        linkUrl: 'https://discord.gg/wmsK3tazt4',
       },
     ]
   },
