@@ -189,7 +189,7 @@ export default {
           description: `Mira los últimos tráilers, diarios de desarrollo y miradas detrás de escena de Revenia.`,
           imgUrl: '/assets/icons/youtube.svg',
           linkText: 'Mira a nosotros',
-          linkUrl: 'https://www.youtube.com/@kulkattostudio',
+          linkUrl: 'https://www.youtube.com/@kulkatto',
         },
         {
           title: 'Discord',

@@ -86,7 +86,7 @@ export default {
         description: `Watch the latest trailers, development diaries, and behind-the-scenes looks at Revenia.`,
         imgUrl: '/assets/icons/youtube.svg',
         linkText: 'Watch',
-        linkUrl: 'https://www.youtube.com/@kulkattostudio',
+        linkUrl: 'https://www.youtube.com/@kulkatto',
       },
       {
         title: 'Discord',
