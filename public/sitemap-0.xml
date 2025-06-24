@@ -7,9 +7,15 @@
     <loc>https://revenia.net/es</loc>
   </url>
   <url>
+    <loc>https://revenia.net/pt</loc>
+  </url>
+  <url>
     <loc>https://revenia.net/media</loc>
   </url>
   <url>
     <loc>https://revenia.net/es/media</loc>
+  </url>
+  <url>
+    <loc>https://revenia.net/pt/media</loc>
   </url>
 </urlset>

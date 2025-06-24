@@ -27,6 +27,12 @@ export const languages: Language[] = [
     language: "Español",
     zhLanguage: "西班牙语",
   },
+  {
+    code: "pt-PT",
+    lang: "pt",
+    language: "Português",
+    zhLanguage: "葡萄牙语",
+  },
   // {
   //   code: "pl-PL",
   //   lang: "pl",
