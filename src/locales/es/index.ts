@@ -17,6 +17,10 @@ export default {
       description: DESCRIPTION,
     },
   },
+  note: {
+    note: 'Nota',
+    content: 'Completamente no oficial, fan site',
+  },
   layout: {
     brand: {
       name: 'Revenia',

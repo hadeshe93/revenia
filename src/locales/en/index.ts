@@ -17,6 +17,10 @@ export default {
       description: DESCRIPTION,
     },
   },
+  note: {
+    note: 'Note',
+    content: 'Completely a fan site, unofficial',
+  },
   layout: {
     brand: {
       name: 'Revenia',
@@ -77,6 +81,10 @@ export default {
           alt: 'Enter the village',
         },
       ],
+      note: {
+        note: 'Note',
+        content: 'Completely unofficial fan site',
+      },
     },
     examples: {
       titlePrefix: 'Experience the',

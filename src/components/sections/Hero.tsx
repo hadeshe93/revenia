@@ -1,24 +1,13 @@
 import LucideDownload from '~icons/lucide/download';
 import LucidePlay from '~icons/lucide/play';
 import { Link } from '@/i18n';
+import { RawResourceType } from '@/types/i18n';
 
 /**
  * Hero 组件的国际化文本接口
  */
 export interface HeroProps {
-  i18nText: {
-    title: string;
-    subtitle: string;
-    description: string;
-    downloadButton: string;
-    trailerButton: string;
-    downloadLink: string;
-    trailerLink: string;
-    screenshots: {
-      imgUrl: string;
-      alt: string;
-    }[];
-  };
+  i18nText: RawResourceType['home']['hero'];
 }
 
 /**
@@ -33,7 +22,7 @@ export interface HeroProps {
  */
 export default function Hero({ i18nText }: HeroProps) {
   return (
-    <section className="relative box-border min-h-screen bg-black text-white overflow-hidden pt-16 md:pt-24">
+    <section className="relative box-border min-h-screen bg-black text-white overflow-hidden">
       {/* 背景装饰 */}
       <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900/30 to-black"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.1)_0%,transparent_50%)]"></div>
@@ -51,6 +40,7 @@ export default function Hero({ i18nText }: HeroProps) {
         <p className="text-xl md:text-2xl lg:text-3xl font-light mb-4 md:mb-8 text-gray-300 tracking-wide font-creepster">
           {i18nText.subtitle}
         </p>
+
 
         {/* 视频 */}
         <iframe

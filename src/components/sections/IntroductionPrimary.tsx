@@ -9,7 +9,7 @@ export interface IntroductionPrimaryProps {
 
 export default function IntroductionPrimary({ i18nText }: IntroductionPrimaryProps) {
   return (
-    <section className="bg-gradient-to-b from-black to-primary/20 py-20 relative overflow-hidden mt-6 text-base-content">
+    <section className="bg-gradient-to-b from-black to-primary/20 pb-20 relative overflow-hidden mt-6 text-base-content">
       <h1 id="introduction" className="text-5xl md:text-7xl font-bold mb-6 text-gradient text-center">
         {i18nText.titlePrefix}&nbsp;
         <span className="text-primary">{i18nText.title}</span>

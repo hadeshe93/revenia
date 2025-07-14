@@ -3,6 +3,7 @@ import { Lang } from '@/lib/langs';
 import { wrapForI18n } from '@/i18n';
 import Introduction from '@/components/sections/Introduction';
 import CTA from '@/components/CTA';
+import Note from '@/components/sections/Note';
 import Hero from '@/components/sections/Hero';
 import Examples from '@/components/sections/Examples';
 import List from '@/components/sections/List';
@@ -13,11 +14,13 @@ type PageProps = Readonly<{
 }>;
 
 async function Home({ params: { locale } }: PageProps) {
-  const [homeI18nText] = await Promise.all([
+  const [homeI18nText, noteI18nText] = await Promise.all([
     getContent('home'),
+    getContent('note'),
   ]);
   return (
-    <div className="">
+    <div className="pt-16 md:pt-24">
+      <Note i18nText={noteI18nText} />
       <Hero i18nText={homeI18nText.hero} />
       <Examples i18nText={homeI18nText.examples} />
       <Introduction i18nText={homeI18nText.Introduction} />

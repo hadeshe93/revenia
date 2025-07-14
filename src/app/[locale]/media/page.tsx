@@ -5,16 +5,21 @@ import { Metadata } from 'next';
 import IntroductionPrimary from '@/components/sections/IntroductionPrimary';
 import VideoList from '@/components/sections/VideoList';
 import CTA from '@/components/CTA';
+import Note from '@/components/sections/Note';
 type PageProps = Readonly<{
   params: { locale: Lang };
 }>;
 
 async function Media(props: PageProps) {
   const { locale } = props.params;
-  const media = await getContent('media');
+  const [media, noteI18nText] = await Promise.all([
+    getContent('media'),
+    getContent('note'),
+  ]);
 
   return (
-    <div className="">
+    <div className="pt-16 md:pt-24">
+      <Note i18nText={noteI18nText} />
       <IntroductionPrimary i18nText={media.introduction} />
       <VideoList i18nText={media.youtube} className="md:grid-cols-3" videoType="youtube" />
       <div className="section-divider"></div>
