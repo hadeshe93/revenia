@@ -12,8 +12,9 @@
 }
 
 body {
+  min-height: 200vh;
   font-family: "PingFang SC", sans-serif;
-  @apply bg-base-300 h-screen overflow-hidden;
+  @apply bg-base-300;
 }
 
 html, body {

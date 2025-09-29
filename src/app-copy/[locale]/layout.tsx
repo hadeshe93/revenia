@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from 'next';
 import { headers } from 'next/headers';
 import { notFound } from 'next/navigation';
 import NextTopLoader from 'nextjs-toploader';
-import { NextIntlClientProvider } from 'next-intl';
 import { getContent, routing, wrapForI18n } from '@/i18n';
 import { langs, type Lang } from '@/lib/langs';
 import NavBar from '@/components/NavBar';
@@ -15,6 +14,7 @@ import HrefLangs from '@/components/HrefLangs';
 import { DEFAULT_THEME } from '@/constants/theme';
 import { DOMAIN } from '@/constants/biz';
 import GoogleAdsense from '@/components/GoogleAdsense';
+
 import '../globals.css';
 
 type LocaleLayoutProps = Readonly<{
@@ -74,7 +74,9 @@ async function LocaleLayout({
   return (
     <html lang={locale} data-theme={DEFAULT_THEME}>
       <head>
-        {isCustom ? <meta name="robots" content="noindex" /> : null}
+        {
+          isCustom ? (<meta name="robots" content="noindex" />) : null
+        }
         <meta name="google-adsense-account" content="ca-pub-6950664459785666" />
         <Canonical locale={locale} />
         <HrefLangs />
@@ -87,11 +89,15 @@ async function LocaleLayout({
       </head>
       <body>
         <NextTopLoader shadow={false} showSpinner={false} color="#0073E9" />
-        <NextIntlClientProvider>
-          <MessageProvider>
-            <main className="">{children}</main>
-          </MessageProvider>
-        </NextIntlClientProvider>
+        <MessageProvider>
+          <Show when={!isEmbed}>
+            <NavBar locale={locale as Lang} i18nText={navBarText} />
+          </Show>
+          <main className="">{children}</main>
+        </MessageProvider>
+        <Show when={!isEmbed}>
+          <Footer locale={locale as Lang} i18nText={footerText} />
+        </Show>
       </body>
     </html>
   );
@@ -107,4 +113,4 @@ export const viewport: Viewport = {
   minimumScale: 1,
   maximumScale: 1,
   userScalable: false,
-};
+}

@@ -4,9 +4,8 @@ import about from './about';
 import media from './media';
 import { DOMAIN } from '@/constants/biz';
 
-const TITLE = 'Revenia: A Mexican Horror Survival Game';
-const DESCRIPTION =
-  'Explore the dark world of Revenia, a third-person horror survival game inspired by Mexican folklore. This is a community-driven website for fans of Revenia.';
+const TITLE = 'Revenia';
+const DESCRIPTION = 'A digital clock built with creepy and bizarre fonts, simulating a sense of horror atmosphere.';
 
 export default {
   metadata: {
